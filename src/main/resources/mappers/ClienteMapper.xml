@@ -61,6 +61,12 @@
         values (#{idcli},#{idit},#{fechai},#{fechaf})
         
     </insert>
+    
+	  <insert parameterType="map" id="agregarCliente">
+        insert into VI_CLIENTES(documento,nombre,telefono,direccion,email,vetado)
+		values (#{cli.documento},#{cli.nombre},#{cli.telefono},#{cli.direccion},#{cli.email},#{cli.vetado});
+        
+    </insert>
 	
 	
 	<resultMap type='Cliente' id='ClienteResult'>

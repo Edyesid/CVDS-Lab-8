@@ -12,7 +12,10 @@ import edu.eci.cvds.samples.entities.Cliente;
  */
 public interface ClienteMapper {
     
-	public Cliente consultarCliente(@Param("idcli") int id);
+	public static Cliente consultarCliente(@Param("idcli") int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
     
     /**
      * Registrar un nuevo item rentado asociado al cliente identificado
@@ -32,5 +35,7 @@ public interface ClienteMapper {
      * @return 
      */
     public List<Cliente> consultarClientes();
+    public static void agregarCliente(@Param("cli") Cliente cliente) {		
+	}
     
 }

@@ -81,8 +81,8 @@ public class MyBatisExample {
         System.out.println(cm.consultarClientes());
         
         TipoItem tipoIt= new TipoItem(3,"Peliculas");
-        Item it = new Item(tipoIt,9999,"SoloCisf","SanchezRodriguez",parseDate("2019-03-12"),1234, "A4","Terror");
-        System.out.println(im.consultarItem(9999));
+        Item it = new Item(tipoIt,1234,"SoloCisf","SanchezRodriguez",parseDate("2019-03-12"),7778, "A4","Terror");
+        System.out.println(im.consultarItem(1234));
         sqlss.commit();
         
         
