@@ -13,7 +13,7 @@ import edu.eci.cvds.samples.services.ServiciosAlquiler;
 public class ServiciosAlquilerItemsImpl implements ServiciosAlquiler {
 
 	@Override
-	public int valorMultaRetrasoxDia(int itemId) {
+	public long valorMultaRetrasoxDia(int itemId) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
@@ -99,6 +99,13 @@ public class ServiciosAlquilerItemsImpl implements ServiciosAlquiler {
 
 	@Override
 	public void vetarCliente(long docu, boolean estado) throws ExcepcionServiciosAlquiler {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public void registrarTipoItem(TipoItem tipoItem) throws ExcepcionServiciosAlquiler {
 		// TODO Auto-generated method stub
 		
 	}

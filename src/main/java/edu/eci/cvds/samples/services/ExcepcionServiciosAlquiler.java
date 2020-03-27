@@ -10,7 +10,7 @@ public class ExcepcionServiciosAlquiler extends Exception {
         super(message);
     }
 
-    public ExcepcionServiciosAlquiler(String message,PersistenceException ex) {
+    public ExcepcionServiciosAlquiler(String message,edu.eci.cvds.sampleprj.dao.PersistenceException e) {
         super(message);
     }
 }

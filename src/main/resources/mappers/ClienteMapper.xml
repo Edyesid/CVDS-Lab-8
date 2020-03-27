@@ -68,6 +68,9 @@
         
     </insert>
 	
+	<update id="vetarCliente" parameterType="map">
+		update VI_CLIENTES set vetado=#{estado} where documento=#{cliente};
+	</update>
 	
 	<resultMap type='Cliente' id='ClienteResult'>
 		<id property='documento' column='documento'/>
