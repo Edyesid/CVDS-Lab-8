@@ -31,10 +31,14 @@ public interface ClienteMapper {
      * Consultar todos los clientes
      * @return 
      */
-    public List<Cliente> consultarClientes();
+   
     
     public void agregarCliente(@Param("cli") Cliente cliente);
 
-	public void vetarCliente(long idCliente, int estado);
+    public void vetarCliente(@Param("cliente") long idCliente,@Param("estado") int estado);
+
+	public List<Cliente> consultarClientes();
+
+	
     
 }
